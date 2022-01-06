@@ -16,11 +16,11 @@
 **Today's Progress**: 
 
 1. Merge Sort - 
-    1.1 Pseudo Code
-    1.2 Python Code  
-    1.3 Complexity Analysis
-    1.4 Recursion Tree Method
-    1.5 External Merge Sort
+    1. Pseudo Code
+    2. Python Code  
+    3. Complexity Analysis
+    4. Recursion Tree Method
+    5. External Merge Sort
 
 
 <!-- **Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
