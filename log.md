@@ -22,6 +22,36 @@
     4. Recursion Tree Method
     5. External Merge Sort
 
+### Day 3: Jan 7, 2022 
+<!-- ##### (delete me or comment me out) -->
+
+**Today's Progress**: 
+
+1. Bubble Sort - 
+    1. Pseudo Code
+    2. Python Code  
+    3. Complexity Analysis
+2. Quick Sort - 
+    1. Pseudo Code
+    2. Python Code  
+    3. Complexity Analysis
+    4. Randomised Quick Sort
+3. Selection Sort - 
+    1. Pseudo Code
+    2. Python Code  
+    3. Complexity Analysis
+4. Linear Time Sorting - 
+    1. Count Sort
+        1. Pseudo Code
+        2. Python Code  
+        3. Complexity Analysis
+    2. Radix Sort -  
+        1. Pseudo Code
+        2. Python Code  
+        3. Complexity Analysis  
+5. Where to use which Sorting techniques - Pro's and Con's 
+
+
 
 <!-- **Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
 
