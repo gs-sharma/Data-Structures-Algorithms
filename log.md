@@ -22,7 +22,7 @@
     4. Recursion Tree Method
     5. External Merge Sort
 
-### Day 3: Jan 7, 2022 
+### Day 2: Jan 7, 2022 
 <!-- ##### (delete me or comment me out) -->
 
 **Today's Progress**: 
