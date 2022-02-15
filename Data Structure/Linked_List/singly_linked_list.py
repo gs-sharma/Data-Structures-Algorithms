@@ -9,14 +9,16 @@ class LinkedList:
     
     def __init__ (self):
         self.head = None
+        self.tail = None
         
     def insert_at_begining(self,info):
-        newNode = Node(info)
+        newNode : Node = Node(info)
         if self.head != None:
             newNode.link = self.head
             self.head = newNode
         else:
             self.head = newNode
+            self.tail = newNode
             
     def insert_at_end(self,info):
         newNode = Node(info)
@@ -24,7 +26,31 @@ class LinkedList:
             current = self.head
             while current.link != None:
                 current = current.link
-            current.link = newNode           
+            current.link = newNode
+            self.tail = newNode
+        else:
+            self.head = newNode
+            self.tail = newNode
+
+    def insert_at_end_tail(self,info):
+        newNode = Node(info)
+        if self.tail is not None:
+            self.tail.link = newNode
+            self.tail = newNode
+        else:
+            self.head = newNode
+            self.tail = newNode
+
+    def insert_at_pos(self,info,pos):
+        newNode = Node(info)
+        count = 1
+        if self.head != None:
+            current = self.head
+            while current.link is not None and count != pos-1:
+                current = current.link
+                count += 1
+            newNode.link = current.link
+            current.link = newNode
         else:
             self.head = newNode
             
@@ -40,15 +66,18 @@ class LinkedList:
             return
         
         current = self.head
-        # try using current.info ????
+
         while current.link !=None:
             if current.link.info == ele:
                 temp = current.link
                 current.link = temp.link
+                if temp.link is None:
+                    self.tail = current
+                    print(f"tail - {current.info}")
                 temp = None
                 return
             current = current.link
-        print("Element not Present")
+        print(f"Element - '{ele}' not Present")
             
 
     def search_node(self,ele):
@@ -57,7 +86,7 @@ class LinkedList:
             return
                 
         current = self.head
-        #Why not current.link is compared here ????
+
         while current != None:
             if current.info == ele:
                 print("Element Found :")
@@ -81,6 +110,14 @@ ll.insert_at_end(20)
 ll.insert_at_end(30)
 ll.display()
 print("*"*10)
+ll.insert_at_end_tail(200)
+ll.insert_at_end_tail(300)
+ll.display()
+print("*"*10)
+ll.insert_at_pos(8, 2)
+ll.insert_at_pos(9,3)
+ll.display()
+print("*"*10)
 ll.delete_node(20)         
 ll.display()
 print("*"*10)
@@ -88,3 +125,6 @@ ll.delete_node(40)
 ll.display()
 print("*"*10)
 ll.search_node(5)         
+print("*"*10)
+ll.delete_node(300)
+ll.display()
